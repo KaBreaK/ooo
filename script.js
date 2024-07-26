@@ -2,7 +2,21 @@ let currentDate = new Date('2024-06-29');
 const card = document.getElementById('card');
 document.addEventListener('DOMContentLoaded', () => {
     const container = document.getElementById('container');
-
+    const imageNames = [
+        'image1.png',
+        'image2.png',
+        'image3.png',
+        'image4.png',
+        'image5.png'
+    ];
+    function getRandomImage() {
+        const randomIndex = Math.floor(Math.random() * imageNames.length);
+        return imageNames[randomIndex];
+    }
+    function setBackgroundImage() {
+        const randomImage = getRandomImage();
+        card.style.backgroundImage = `url('/roses/${randomImage}')`;
+    }
     // Funkcja do pobierania danych z pliku JSON
     async function fetchTexts() {
         try {
@@ -37,9 +51,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
     function displayCard(text) {
+        setBackgroundImage();
         console.log(text);
         card.style.display = 'block';
-        card.innerHTML = text;
+        card.innerHTML = `<div id="vvv"><p>${text}</p></div>`;
         card.addEventListener('click', () => {
             card.style.display = 'none';
         });
