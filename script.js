@@ -1,4 +1,5 @@
 let currentDate = new Date('2024-06-29');
+const card = document.getElementById('card');
 document.addEventListener('DOMContentLoaded', () => {
     const container = document.getElementById('container');
 
@@ -25,14 +26,18 @@ document.addEventListener('DOMContentLoaded', () => {
             square.classList.add('square');
             square.innerHTML = `<h2>${adzien}</h2>`
             square.addEventListener('click', () => {
-                displayCard(text.content);
+                displayCard(text);
+            });
+            square.addEventListener('click', () => {
+                card.style.display = 'block';
+                console.log("ssss")
             });
             container.appendChild(square);
             currentDate.setDate(currentDate.getDate() + 1);
         });
     }
     function displayCard(text) {
-        cardContent.innerHTML = text;
+        card.innerHTML = text;
         card.style.display = 'block';
     }
     fetchTexts();
