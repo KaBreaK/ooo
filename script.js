@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     function setBackgroundImage() {
         const randomImage = getRandomImage();
-        card.style.backgroundImage = `url('/roses/${randomImage}')`;
+        card.style.backgroundImage = `url('${randomImage}')`;
     }
     // Funkcja do pobierania danych z pliku JSON
     async function fetchTexts() {
