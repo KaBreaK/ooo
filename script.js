@@ -37,8 +37,12 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
     function displayCard(text) {
-        card.innerHTML = text;
+        console.log(text);
         card.style.display = 'block';
+        card.innerHTML = text;
+        card.addEventListener('click', () => {
+            card.style.display = 'none';
+        });
     }
     fetchTexts();
 });
