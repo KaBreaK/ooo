@@ -29,5 +29,6 @@ body {
     justify-content: end;
 }
 
-.square:hover {
+.square h1{
+    margin-bottom: 20px;
 }
