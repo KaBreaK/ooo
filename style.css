@@ -51,7 +51,7 @@ body {
     display: none;          /* Ukryty domyślnie */
 }
 .card p{
-    font-size: 40px; /* Rozmiar czcionki */
+    font-size: 35px; /* Rozmiar czcionki */
     color: white; /* Kolor tekstu */
     text-shadow: 
       1px 1px 0 #000, /* Cień w prawo i w dół */
