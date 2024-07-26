@@ -32,3 +32,9 @@ body {
 .square h1{
     margin-bottom: 20px;
 }
+.card {
+position: absolute;
+background-color: red;
+width: 80%;
+height: 90%;
+}
