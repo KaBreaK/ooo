@@ -1,4 +1,4 @@
-let currentDate = new Date('2024-06-29');
+let currentDate = new Date('2024-06-24');
 const card = document.getElementById('card');
 document.addEventListener('DOMContentLoaded', () => {
     const container = document.getElementById('container');
@@ -53,8 +53,9 @@ document.addEventListener('DOMContentLoaded', () => {
     function displayCard(text) {
         setBackgroundImage();
         console.log(text);
+        const formattedText = text.replace(/\n/g, '<br>');
         card.style.display = 'block';
-        card.innerHTML = `<div id="vvv"><p>${text}</p></div>`;
+        card.innerHTML = `<div id="vvv"><p>${formattedText}</p></div>`;
         card.addEventListener('click', () => {
             card.style.display = 'none';
         });

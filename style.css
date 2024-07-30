@@ -37,12 +37,11 @@ body {
     background-image: url(image.png);
     background-size: cover;
     background-position: center; /* Wyśrodkowanie obrazu tła */
-    width: 80%;
+    width: 90%;
     height: 80%;
     display: flex;
     justify-content: center; /* Wyśrodkowanie zawartości poziomo */
     align-items: center;     /* Wyśrodkowanie zawartości pionowo */
-    text-align: center;      /* Wyśrodkowanie tekstu w poziomie */
     color: black;
     font-size: 2vh;          /* Można dostosować według potrzeb */
     border-radius: 2vh;     /* Zaokrąglenie rogów */
@@ -51,6 +50,7 @@ body {
     display: none;          /* Ukryty domyślnie */
 }
 .card p{
+    margin-left: 1vh;
     color: white; /* Kolor tekstu */
     text-shadow: 
       1px 1px 0 #000, /* Cień w prawo i w dół */
@@ -59,8 +59,8 @@ body {
       -1px 1px 0 #000; /* Cień w lewo i w dół */
 }
 #vvv{
+    font-size: 1.7vh;
     display: flex;
     height: 100%;
     align-items: center;     /* Wyśrodkowanie zawartości pionowo */
-    text-align: center;      /* Wyśrodkowanie tekstu w poziomie */
 }
